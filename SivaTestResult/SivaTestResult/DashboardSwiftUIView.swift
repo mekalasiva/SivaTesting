@@ -9,9 +9,13 @@ import SwiftUI
 
 struct DashboardSwiftUIView: View {
     var body: some View {
-        VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).shadow(color: .red, radius: 1)
+        ScrollView {
+            VStack {
+                List {
+                    Text("Hello, World!")
+                }
+                .background(Color.gray.opacity(0.2))
+            }
 
         }
         
